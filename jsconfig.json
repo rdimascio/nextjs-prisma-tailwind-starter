@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"jsx": "react",
+		"checkJs": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["components/*"],
+			"@/lib/*": ["lib/*"],
+			"@/util/*": ["util/*"],
+			"@/scripts/*": ["bin/*"],
+			"@/styles/*": ["styles/*"]
+		}
+	}
+}

@@ -1,20 +1,74 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.0.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.0.4"
-  }
+	"name": "nextjs-prisma-tailwind-starter",
+	"version": "0.1.0",
+	"meta": {
+		"url": "https://github.com/rdimascio/nextjs-prisma-tailwind-starter",
+		"siteName": "Next.js Prisma Tailwind Starter",
+		"description": "A simple Next.js starter with NextAuth.js, Prisma, Planetscale, Tailwind"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"analyze": "env ANALYZE=true next build"
+	},
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"lint-staged": {
+		"*.+(js|jsx|ts|tsx)": [
+			"eslint --fix"
+		],
+		"*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
+			"prettier --write"
+		]
+	},
+	"dependencies": {
+		"@headlessui/react": "^1.4.2",
+		"@heroicons/react": "^1.0.5",
+		"@next-auth/prisma-adapter": "^0.5.2-next.19",
+		"@prisma/client": "^3.5.0",
+		"@tailwindcss/forms": "^0.3.4",
+		"@tailwindcss/line-clamp": "^0.2.2",
+		"@tailwindcss/typography": "^0.4.1",
+		"autoprefixer": "^10.4.0",
+		"classnames": "^2.2.6",
+		"gray-matter": "^4.0.3",
+		"mjml": "^4.11.0",
+		"mjml-react": "^2.0.3",
+		"next": "12.0.4",
+		"next-auth": "^4.0.0-beta.7",
+		"next-pwa": "^5.4.1",
+		"next-seo": "^4.28.1",
+		"next-sitemap": "^1.6.203",
+		"next-themes": "^0.0.15",
+		"nodemailer": "^6.7.2",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"swr": "^1.0.1",
+		"tailwindcss": "^2.2.19"
+	},
+	"devDependencies": {
+		"@next/bundle-analyzer": "^12.0.4",
+		"@svgr/webpack": "^6.0.0",
+		"eslint": "7.32.0",
+		"eslint-config-next": "12.0.4",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-prettier": "^4.0.0",
+		"file-loader": "^6.2.0",
+		"globby": "^11.0.4",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.1.2",
+		"next-compose-plugins": "^2.2.1",
+		"postcss": "^8.2.15",
+		"prettier": "^2.5.0",
+		"prisma": "^3.5.0",
+		"read-pkg-up": "^9.0.0",
+		"rss": "^1.2.2"
+	},
+	"resolutions": {
+		"preact": "10.5.15"
+	}
 }
